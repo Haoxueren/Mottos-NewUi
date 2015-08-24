@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_button"
+        android:background="@drawable/selector_edittext"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Username:"
+            android:textColor="@color/color_dark" />
+
+        <EditText
+            android:id="@+id/et_username"
+            style="@style/style_edittext"
+            android:layout_margin="0dp"
+            android:background="@null"
+            android:hint="请输入用户名" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_button"
+        android:layout_marginRight="@dimen/margin_button"
+        android:background="@drawable/selector_edittext"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Password:"
+            android:textColor="@color/color_dark" />
+
+        <EditText
+            
+            android:id="@+id/et_password"
+            style="@style/style_edittext"
+            android:layout_margin="0dp"
+            android:background="@null"
+            android:hint="请输入密码"
+            android:password="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_regist"
+            style="@style/style_button"
+            android:layout_width="0dp"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:text="注册" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_button"
+            android:layout_weight="0.1" />
+
+        <Button
+            android:id="@+id/bt_login"
+            style="@style/style_button"
+            android:layout_width="0dp"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:text="登录" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_upload"
+        style="@style/style_button"
+        android:text="同步数据到云端" />
+
+    <Button
+        android:id="@+id/bt_download"
+        style="@style/style_button"
+        android:text="恢复数据到本地" />
+
+</LinearLayout>

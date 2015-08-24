@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GoldMotto</string>
+    <string name="action_settings">Settings</string>
+    <string name="sql_update">update mottos set motto="new_motto" where id=-1</string>
+
+</resources>

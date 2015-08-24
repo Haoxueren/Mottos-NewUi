@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/et_motto"
+        style="@style/style_edittext"
+        android:hint="请录入内容..." />
+
+    <Button
+        android:id="@+id/bt_insert"
+        style="@style/style_button"
+        android:text="插入数据" />
+
+    <EditText
+        android:id="@+id/et_sql"
+        style="@style/style_edittext"
+        android:hint="请录入SQL命令..." />
+
+    <Button
+        android:id="@+id/bt_operate"
+        style="@style/style_button"
+        android:text="执行SQL命令" />
+
+    <TextView
+        android:id="@+id/tv_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp" />
+
+</LinearLayout>
